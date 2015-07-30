@@ -51,6 +51,10 @@ coverage.xml
 *.log
 **/db.sqlite3
 
+# Eclipse
+.project
+.pydevproject
+
 # Sphinx documentation
 docs/_build/
 
