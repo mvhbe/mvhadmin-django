@@ -6,7 +6,7 @@ from homepage.views import home_page
 class HomePageViewTest(TestCase):
 
     def test_home_page_heeft_titel(self):
-        """Titel home page is 'Mvh Administration'"""
+        """Titel home page is 'MvhAdmin'"""
         request = HttpRequest()
         response = home_page(request)
-        self.assertIn('Mvh Administratie', response.content.decode("utf8"))
+        self.assertIn('MvhAdmin', response.content.decode("utf8"))

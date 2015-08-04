@@ -60,17 +60,14 @@
     <div class="container-fluid">
         <div class="row">
             <div id="sidebar" class="col-md-2">
-                {{ block menu-ingave }}
-                    <p><strong>Main content !</strong></p>
-                {{ endblock }}
-                {{ block menu-beheer }}
-                    <p><strong>Main content !</strong></p>
-                {{ endblock }}
+                {% block menu-ingave %}
+                {% endblock %}
+                {% block menu-beheer %}
+                {% endblock %}
             </div>
             <div id="content" class="col-md-10">
-                {{ block content}}
-                    <p><strong>Main content !</strong></p>
-                {{ endblock}}
+                {% block content %}
+                {% endblock %}
             </div>
         </div>
     </div>
